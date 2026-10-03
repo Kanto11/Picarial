@@ -1,0 +1,35 @@
+
+$color-blanc :#FFFFFF;
+$bg-gris :#F8F9Fa;
+$bg-gris-section:#F1F3F5;
+$bg-tag:#6E38F710;
+$bg-btn-jaune:#F09008;
+
+$color-vert :#073C35;
+$color-tag:#6E38F7;
+$color-noir:#121214;
+$color-gris:#495057;
+$color-user:#868E96;
+$color-footer:$color-user;
+
+$font-link-nav :'poopins_regular';
+$font-link-active:'poopins_sm';
+$font-tag-title:'poopins_bl';
+$font-tag:'manrope_sm';
+$font-stat-info:'manrope_md';
+$font-stat-val :'outfit_bl';
+$font-title:'montserratAlt_sm';
+$font-savoir-plus: $font-title;
+$font-title-section :'montserratAlt_bl';
+$font-p:'montserratAlt_rg';
+$font_temoignage_user:'outfit_sm';
+$font_temoignage_poste:'manrope_rg';
+$footer_lower:$font_temoignage_poste;
+$font-projet:'montserratAlt_extra';
+
+$breakpoints: (
+  "sm": 480px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1280px
+);

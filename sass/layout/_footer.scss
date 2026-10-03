@@ -1,0 +1,93 @@
+@use '../abstract' as * ;
+
+.footer__container{
+    padding: 2rem 0;
+}
+.footer__upper{
+    display: flex;
+    justify-content:space-between;
+    color: $color-footer;
+    font-family: $font-p;
+    font-size: 0.6rem;
+    gap:1rem;
+    h4{
+        color: $color-noir;
+        font-family: $font-title-section;
+        text-transform: uppercase;
+    }
+}
+.left__text{
+    width: 20rem;
+    width: 10rem;
+}
+.left__img{
+    padding-bottom: 1rem;
+}
+.right__text{
+    justify-content: center;
+}
+.footer__link{
+    display: none;
+}
+
+.footer__bare{
+    margin: 1rem 0;
+    height: 0.5px;
+    background-color: $color-footer;
+}
+.footer__lower{
+    display: flex;
+    justify-content: space-between;
+    font-family: $footer_lower;
+    color: $color-footer;
+    font-size: 0.5rem;
+
+}
+.footer__contact{
+        p{
+            padding-top: 1rem;
+        }
+    }
+.lower__right{
+    display: flex;
+    gap: 1.5rem;
+}
+
+@include respond(md){
+    .footer__container{
+        padding: 5rem 0 2.5rem 0;
+    }
+    .footer__upper{
+        font-size: 0.8rem;
+        
+        img{
+            width: 6.9rem;
+            height: 1.8rem;
+        }
+    }
+    .footer__right{
+        display: flex;
+        gap: 5rem;
+        width: 20rem;
+    }
+    .footer__link{
+        display: block;
+        li{
+            padding-top: 1rem;
+        }
+    }
+    .footer__contact{
+        p{
+            padding-top: 1rem;
+        }
+    }
+
+    .footer__lower{
+        font-size: 0.8rem;
+    }
+    .footer__bare{
+    margin: 4rem 0;
+
+    }
+
+}

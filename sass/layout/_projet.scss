@@ -1,0 +1,75 @@
+@use '../abstract' as * ;
+.projet{
+    background-color: $color-noir;
+    padding: 2rem 0;
+}
+.projet__container{
+    margin: auto;
+    @include center();
+    flex-direction: column;
+    text-align: center;
+}
+
+.projet__p{
+    color: $color-user;
+    font-family: $font-p;
+    font-size: 0.9rem;
+}
+.projet__title{
+    color: $color-blanc;
+    font-family: $font-projet;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+   
+}
+.projet__action{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-tag;
+    gap :1.125rem;
+    button{
+        border-radius: 1.8rem;
+        padding: 0.7rem 1.2rem;
+        color: $color-blanc;   
+    }
+}
+.projet__demande{
+    display: flex;
+    background-color: $bg-btn-jaune;
+    align-items: center;
+    img{
+        margin-left: 0.5rem;
+        width: 6.67px;
+        height: 6.67px;
+    }
+}
+.projet__consultation{
+    border: 1px solid;
+    border-color: $color-blanc;
+}
+@include respond(md){
+    .projet{
+        padding: 7.5rem 0;
+    }
+    .projet__container{
+        width: 50rem;
+        height: 17rem;
+    }
+    .projet__title{
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+    .projet__p{
+        font-size: 1.12rem;
+    }
+    .projet__action{
+        flex-direction: row;
+        margin-top: 2.5rem;
+        button{
+            border-radius: 1.8rem;
+            padding: 1rem 1.75rem;
+            color: $color-blanc;   
+        }
+    }
+}

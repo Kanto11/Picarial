@@ -1,0 +1,9 @@
+@use '../abstract' as * ;
+
+.tag{
+    color: $color-tag;
+    font-size:14px;
+    font-family: $font-tag-title; 
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}

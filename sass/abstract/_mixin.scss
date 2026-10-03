@@ -1,0 +1,66 @@
+@use "sass:map";
+@use "variable" as * ;
+
+@mixin dflex(){
+    margin: auto;
+    display: flex;
+}
+
+@mixin card(){
+  .card{
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #E9ECEF;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: $color-blanc;
+    }
+    .card__text{
+    font-family: $font-p;
+    color: $color-gris;
+    font-size: 0.8rem;
+    }
+    @include respond ("md"){
+      .card{
+         padding: 2.5rem;
+      }
+       .card__text{
+        font-size: 1rem;
+
+    }
+    }
+}
+
+@mixin typo_title_p(){
+  .section__title{
+    color: $color-noir;
+    font-size: 1.5rem;
+    font-family: $font-title-section;
+    padding-bottom: 1rem;
+      @include respond("md") {
+        font-size: 2.5rem;        
+        }
+  }
+  .section__p{
+    font-size: 0.9rem;
+    font-family: $font-p;
+    color: $color-gris;
+    padding-bottom: 1rem;
+    @include respond("md") {
+      font-size: 1rem;      
+    }
+}
+}
+
+@mixin respond($bp){
+  @media (min-width: map.get($breakpoints, $bp)) {
+    @content;
+  }
+}
+
+@mixin center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
